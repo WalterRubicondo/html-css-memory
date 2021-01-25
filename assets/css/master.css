@@ -13,14 +13,13 @@ body {
 }
 
 .table {
-  position: relative;
   width: 70%;
-  margin: 15px auto;
-  text-align: center;
+  margin: 30px auto;
 }
 
 h1 {
   color: rgb(255,255,255);
+  margin-top: 20px;
 }
 
 footer {
@@ -42,6 +41,7 @@ div.row:after {
 }
 
 /* Card */
+
 [class^="card"] {
   height: 180px;
   width: 150px;
@@ -54,18 +54,99 @@ div.row:after {
   margin: 0 1em;
 }
 
-.card-6 {
-  background-image: url('../img/air-baloon.png');
-  background-size: 140px 150px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: rgb(255,255,255);
+.bicycle {
+    background-image: url('../img/bicycle.png');
 }
+
+.air-baloon {
+    background-image: url('../img/air-baloon.png');
+}
+
+.cruise-ship {
+    background-image: url('../img/cruise-ship.png');
+}
+
+.submarine {
+    background-image: url('../img/submarine.png');
+}
+
+.tractor {
+    background-image: url('../img/tractor.png');
+}
+
+.tram {
+    background-image: url('../img/tram.png');
+}
+
 /* Card */
 
-.baloon {
-  color: rgb(230, 25, 134);
+/* Utilities */
+
+[class^='text-'] {
+  font-size: 15px;
   position: absolute;
-  bottom: 0;
-  left: 33px;
+  bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.hide {
+  background-size: 140px 150px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: rgb(255,255,255);
+  height: 100%;
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.text-1 {
+  color: rgb(72, 13, 213);
+}
+
+.text-2 {
+  color: rgb(230, 25, 134);
+}
+
+.text-3 {
+  color: rgb(4, 221, 20);
+}
+
+.text-4 {
+  color: rgb(122, 122, 122);
+}
+
+.text-5 {
+  color: rgb(238, 83, 238);
+}
+
+.text-6 {
+  color: rgb(69, 120, 137);
+}
+
+/* Utilities */
+
+.card-1:hover .hide {
+  display: block;
+}
+
+.card-2:hover .hide {
+  display: block;
+}
+
+.card-3:hover .hide {
+  display: block;
+}
+
+.card-4:hover .hide {
+  display: block;
+}
+
+.card-5:hover .hide {
+  display: block;
+}
+
+.card-6:hover .hide {
+  display: block;
 }
